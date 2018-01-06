@@ -11,8 +11,8 @@
         
         
         <ul>
-            {% for issue in issues %}
-            <li>{{ issue.url }}</li>
+            {% for repo in repos %}
+            <li>{{ repo.svn_url }}</li>
             {% endfor %}
         </ul>
     </body>
