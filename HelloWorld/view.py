@@ -7,7 +7,7 @@ def hello(request):
     context          = {}
     context['hello'] = 'Hello World!'
     context['woo'] ='you bad boy'
-    gh = github.GitHub(username='usrname', password='password')
+    gh = github.GitHub(username='usr', password='pass')
     repos = gh.user().starred.get()
 #    repos= gh.users('richardissuperman').starred.get()
     context['repos'] = repos

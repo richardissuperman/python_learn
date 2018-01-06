@@ -12,8 +12,12 @@
         
         <ul>
             {% for repo in repos %}
-            <li>{{ repo.svn_url }}</li>
+            <a href = {{repo.svn_url}} target="_blank" ><li>{{ repo.name }}</li></a>
             {% endfor %}
+        </ul>
+        
+        <ul>
+            <a href = "http://www.sina.com.cn" target="_blank"><li> hello</li> </>
         </ul>
     </body>
 </html>
