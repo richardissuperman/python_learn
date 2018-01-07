@@ -213,7 +213,7 @@ class GitHub(object):
         if state:
             kw['state'] = state
         opener = build_opener(HTTPSHandler)
-        request = Request('https://github.com/login/oauth/access_token', data=_encode_params(kw))
+        request = Request('https://github.com/login/oauth/access_token', data=urllib.parse.urlencode(kw).encode("utf-8"))
         request.get_method = _METHOD_MAP['POST']
         request.add_header('Accept', 'application/json')
         try:

@@ -2,22 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
-            <title>菜鸟教程(runoob.com)</title>
+            <title>Github</title>
     </head>
     <body>
-        <h1>{{ hello }}</h1>
-        
-        <p>{{woo}}</p>
-        
-        
         <ul>
             {% for repo in repos %}
             <a href = {{repo.svn_url}} target="_blank" ><li>{{ repo.name }}</li></a>
             {% endfor %}
-        </ul>
-        
-        <ul>
-            <a href = "http://www.sina.com.cn" target="_blank"><li> hello</li> </>
         </ul>
     </body>
 </html>
